@@ -1,23 +1,16 @@
 package eu.sordiddev.rainbowtext.commands;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import javax.sound.sampled.Clip;
-import java.awt.datatransfer.Clipboard;
-import java.awt.print.Paper;
 import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 
-public class RedGradient implements CommandExecutor {
+public class GreenGradient implements CommandExecutor {
     @Override
     public boolean onCommand( CommandSender sender,  Command command,  String label,  String[] text) {
 
@@ -42,8 +35,7 @@ public class RedGradient implements CommandExecutor {
         String inputtext = String.join(" ",text);
         String outputtext = "";
 
-
-        int color = 1;
+        int color = 30;
         int textlength = inputtext.length();
         currentposition = 0;
         char currentletter;
