@@ -46,7 +46,6 @@ public class GradientAlogythm implements CommandExecutor {
         currentposition = 0;
         char currentletter;
 
-        sender.sendMessage(String.valueOf(color));
 
         if (textlength != 0) {
             while (textlength > currentposition) {
