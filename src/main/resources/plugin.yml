@@ -1,0 +1,9 @@
+name: RainbowText
+version: '${project.version}'
+main: eu.sordiddev.rainbowtext.RainbowText
+api-version: 1.18
+authors: [ sord1d ]
+description: Adds a gradient to your text
+website: github.com/sord1d
+commands:
+  rtr:
