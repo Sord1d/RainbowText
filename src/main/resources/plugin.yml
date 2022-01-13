@@ -7,6 +7,15 @@ description: Adds a gradient to your text
 website: github.com/sord1d
 commands:
   rtr:
+    permission: rainbowtext.use
+    permission-message: "Error! You do not have permission to use this command. (rainbowtext.use)"
   rtg:
+    permission: rainbowtext.use
+    permission-message: "Error! You do not have permission to use this command. (rainbowtext.use)"
   rty:
+    permission: rainbowtext.use
+    permission-message: "Error! You do not have permission to use this command. (rainbowtext.use)"
   rtb:
+    permission: rainbowtext.use
+    permission-message: "Error! You do not have permission to use this command. (rainbowtext.use)"
+
