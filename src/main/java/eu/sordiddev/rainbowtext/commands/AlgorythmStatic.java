@@ -8,14 +8,13 @@ import org.bukkit.entity.Player;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 
 
-public class GradientAlogythm implements CommandExecutor {
+public class AlgorythmStatic implements CommandExecutor {
     public int color;
     public int startcolor;
 
-    public GradientAlogythm(int i) {
+    public AlgorythmStatic(int i) {
         color = i;
         startcolor = i;
 

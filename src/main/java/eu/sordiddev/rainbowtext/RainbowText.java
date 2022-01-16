@@ -9,10 +9,10 @@ public final class RainbowText extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         int color;
-        getCommand("rtr").setExecutor(new GradientAlogythm(1));
-        getCommand("rtg").setExecutor(new GradientAlogythm(30));
-        getCommand("rtb").setExecutor(new GradientAlogythm(45));
-        getCommand("rty").setExecutor(new GradientAlogythm(15));
+        getCommand("rtrs").setExecutor(new AlgorythmStatic(1));
+        getCommand("rtgs").setExecutor(new AlgorythmStatic(30));
+        getCommand("rtbs").setExecutor(new AlgorythmStatic(45));
+        getCommand("rtys").setExecutor(new AlgorythmStatic(15));
     }
 
     @Override
