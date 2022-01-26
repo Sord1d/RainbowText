@@ -71,32 +71,7 @@ public class AlgorythmDynamic implements CommandExecutor {
         return false;
     }
 
-    /*This class is based on code from stackoverflow.
-    public class RBCalc<Queue> {
-        public int n;
 
-        //get the text length
-        public RBCalc(int textlength) {
-            int n = textlength;
-        }
-
-        float hue1 = Color.RGBtoHSB(0
-                , 1, 0, null)[0];
-        float hue2 = Color.RGBtoHSB(0, 0, 1, null)[0];
-
-
-
-        void colorlist() {
-            for (int i = 0; i < n; i++) {
-
-                colors.add(String.valueOf(Color.getHSBColor(hue2 + (i * (hue2 - hue1) / n), 1, 1)));
-            }
-
-            return;
-
-        }
-
-    }*/
 
 
 
