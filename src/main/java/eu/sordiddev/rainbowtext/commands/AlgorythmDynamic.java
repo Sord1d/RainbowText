@@ -25,13 +25,6 @@ public class AlgorythmDynamic implements CommandExecutor {
     public AlgorythmDynamic(int i) {
         color = i;
     }
-    /*
-    color codes
-    RED         ff0000  111111110000000000000000
-    GREEN       6fff12  011011111111111100010010
-    BLUE        00f5ff  000000001111010111111111
-    YELLOW      ffff00  111111111111111100000000
-     */
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] text) {
@@ -41,12 +34,33 @@ public class AlgorythmDynamic implements CommandExecutor {
         String outputtext = "";
         int textlength = inputtext.length();
 
+    /*
+    color codes
+    1 - RED         ff0000  255 0 0
+    2 - GREEN       6fff12  111 255 18
+    3 - BLUE        00f5ff  0 254 255
+    4 - YELLOW      ffff00  255 255 0
+     */
 
-       // TODO Define start values for the colors depending on the command
-
-        float hue1 = Color.RGBtoHSB(10
-                , 1, 10, null)[0];
+        //Define start values for the colors depending on the command -
+        // TODO something's still wring with this color gradient stuff. It works for some colors, doesn't work for others - also the displayed colors are not the ones defined below fml i guess
+        float hue1 = Color.RGBtoHSB(10, 1, 10, null)[0];
         float hue2 = Color.RGBtoHSB(100, 100, 110, null)[0];
+
+        if ( color == 1){
+             hue1 = Color.RGBtoHSB(255, 0, 0, null)[0];
+             hue2 = Color.RGBtoHSB(255, 255, 0, null)[0];
+        } else if ( color == 2){
+            hue1 = Color.RGBtoHSB(111, 255, 18, null)[0];
+            hue2 = Color.RGBtoHSB(0, 255, 255, null)[0];
+        } else if ( color == 3){
+            hue1 = Color.RGBtoHSB(10, 1, 10, null)[0];
+            hue2 = Color.RGBtoHSB(100, 100, 110, null)[0];
+        } else if ( color == 4){
+            hue1 = Color.RGBtoHSB(255, 255, 0, null)[0];
+            hue2 = Color.RGBtoHSB(111, 255, 18, null)[0];
+        }
+
 
         //defining text length n and starting a loop for n steps
 
