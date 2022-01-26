@@ -68,7 +68,7 @@ public class AlgorythmDynamic implements CommandExecutor {
         for (int i = 0; i < n; i++) {
 
             //calculating a gradient due to the power of maths - yay maths (I googled the maths formula)
-           loopcolor =  Color.getHSBColor(hue2 + (i * (hue2 - hue1) / n), 1, 1);
+           loopcolor =  Color.getHSBColor(hue1 + (i * (hue2 - hue1) / n), 1, 1);
 
            //getting rgb values and converting it to hex, adding the color to the color list
             int red = loopcolor.getRed();
@@ -78,8 +78,6 @@ public class AlgorythmDynamic implements CommandExecutor {
             colors.add(hex);
 
         }
-
-        sender.sendMessage(String.valueOf(colors)); //TODO REMOVE
 
         if ( textlength != 0 ) {
             int currentposition = 0;
