@@ -44,7 +44,6 @@ public class AlgorythmDynamic implements CommandExecutor {
 
        //Defining start values for the colors depending on the command TODO
 
-
         float hue1 = Color.RGBtoHSB(10
                 , 1, 10, null)[0];
         float hue2 = Color.RGBtoHSB(100, 100, 110, null)[0];
