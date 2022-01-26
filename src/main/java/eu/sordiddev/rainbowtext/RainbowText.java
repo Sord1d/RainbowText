@@ -20,10 +20,10 @@ public final class RainbowText extends JavaPlugin {
         //Commands for the new generation method
 
        getCommand("rtr").setExecutor(new AlgorythmDynamic(1));
-        //getCommand("rtg").setExecutor(new AlgorythmDynamic(2));
-        //getCommand("rtb").setExecutor(new AlgorythmDynamic(3));
-        //getCommand("rty").setExecutor(new AlgorythmDynamic(4));
-        //getCommand("rt").setExecutor(new AlgorythmDynamic(5));
+       getCommand("rtg").setExecutor(new AlgorythmDynamic(2));
+       getCommand("rtb").setExecutor(new AlgorythmDynamic(3));
+       getCommand("rty").setExecutor(new AlgorythmDynamic(4));
+       getCommand("rt").setExecutor(new AlgorythmDynamic(5));
     }
 
     @Override
