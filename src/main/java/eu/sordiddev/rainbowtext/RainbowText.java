@@ -23,7 +23,7 @@ public final class RainbowText extends JavaPlugin {
         getCommand("rtg").setExecutor(new AlgorythmDynamic(2));
         getCommand("rtb").setExecutor(new AlgorythmDynamic(3));
         getCommand("rty").setExecutor(new AlgorythmDynamic(4));
-        // getCommand("rt").setExecutor(new AlgorythmDynamic(5));
+        getCommand("rt").setExecutor(new AlgorythmDynamic(5));
     }
 
     @Override

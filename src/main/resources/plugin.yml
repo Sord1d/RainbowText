@@ -30,3 +30,7 @@ commands:
   rty:
     permission: rainbowtext.use
     permission-message: "Error! You do not have permission to use this command. (rainbowtext.use)"
+  rt:
+    permission: rainbowtext.use
+    permission-message: "Error! You do not have permission to use this command. (rainbowtext.use)"
+

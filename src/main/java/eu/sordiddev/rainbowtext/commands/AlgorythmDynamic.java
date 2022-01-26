@@ -48,17 +48,20 @@ public class AlgorythmDynamic implements CommandExecutor {
         float hue2 = Color.RGBtoHSB(100, 100, 110, null)[0];
 
         if ( color == 1){
-             hue1 = Color.RGBtoHSB(255, 0, 0, null)[0];
-             hue2 = Color.RGBtoHSB(255, 255, 0, null)[0];
+            hue1 = Color.RGBtoHSB(255, 0, 0, null)[0];
+            hue2 = Color.RGBtoHSB(255, 255, 0, null)[0];
         } else if ( color == 2){
             hue1 = Color.RGBtoHSB(111, 255, 18, null)[0];
             hue2 = Color.RGBtoHSB(0, 255, 255, null)[0];
         } else if ( color == 3){
-            hue1 = Color.RGBtoHSB(10, 1, 10, null)[0];
-            hue2 = Color.RGBtoHSB(100, 100, 110, null)[0];
+            hue1 = Color.RGBtoHSB(0, 254, 255, null)[0];
+            hue2 = Color.RGBtoHSB(128, 0, 128, null)[0];
         } else if ( color == 4){
             hue1 = Color.RGBtoHSB(255, 255, 0, null)[0];
             hue2 = Color.RGBtoHSB(111, 255, 18, null)[0];
+        } else if ( color == 5 ){
+            hue1 = Color.RGBtoHSB(255, 0, 0, null)[0];
+            hue2 = Color.RGBtoHSB(255, 0, 4, null)[0];
         }
 
 
@@ -94,6 +97,21 @@ public class AlgorythmDynamic implements CommandExecutor {
 
 
             }
+
+        }
+        if ( text.length == 0 ) {
+            sender.sendMessage(ChatColor.GREEN + "");
+            sender.sendMessage(ChatColor.GREEN + "RainbowText V 1.0");
+            sender.sendMessage(ChatColor.GREEN + "");
+            sender.sendMessage(ChatColor.GREEN + "/rt <text> - add a rainbow gradient to your text");
+            sender.sendMessage(ChatColor.GREEN + "/rtr <text> - add a red gradient to your text");
+            sender.sendMessage(ChatColor.GREEN + "/rtg <text> - add a green gradient tu your text");
+            sender.sendMessage(ChatColor.GREEN + "/rtb <text> - add a blue gradient to your text");
+            sender.sendMessage(ChatColor.GREEN + "/rty <text> - add a yellow gradient to your text");
+            sender.sendMessage(ChatColor.GREEN + "For adding a static gradient use  /rtrs, /rtgs, /rtbs or /rtys");
+            sender.sendMessage(ChatColor.GREEN + "");
+            sender.sendMessage(ChatColor.GREEN + "github.com/sord1d/rainbowtext");
+            return true;
 
         }
 

@@ -26,14 +26,15 @@ public class AlgorythmStatic implements CommandExecutor {
 
         if ( text.length == 0 ) {
             sender.sendMessage(ChatColor.GREEN + "");
-            sender.sendMessage(ChatColor.GREEN + "RainbowText Help");
+            sender.sendMessage(ChatColor.GREEN + "RainbowText V 1.0");
             sender.sendMessage(ChatColor.GREEN + "");
-            sender.sendMessage(ChatColor.GREEN + "/rtr <text> - adds a gradient to your text starting with red");
-            sender.sendMessage(ChatColor.GREEN + "/rtg <text> - adds a gradient to your text starting with green");
-            sender.sendMessage(ChatColor.GREEN + "/rtb <text> - adds a gradient to your text starting with blue");
-            sender.sendMessage(ChatColor.GREEN + "/rty <text> - adds a gradient to your text starting with yellow");
+            sender.sendMessage(ChatColor.GREEN + "/rtrs <text> - adds a static gradient to your text starting with red");
+            sender.sendMessage(ChatColor.GREEN + "/rtgs <text> - adds a static gradient to your text starting with green");
+            sender.sendMessage(ChatColor.GREEN + "/rtbs <text> - adds a static gradient to your text starting with blue");
+            sender.sendMessage(ChatColor.GREEN + "/rtys <text> - adds a static gradient to your text starting with yellow");
+            sender.sendMessage(ChatColor.GREEN + "For adding a dynamic gradient use /rt, /rtr, /rtg, /rtb or /rty");
             sender.sendMessage(ChatColor.GREEN + "");
-            sender.sendMessage(ChatColor.GREEN + "Please report issues on github.com/sord1d/RainbowText");
+            sender.sendMessage(ChatColor.GREEN + "github.com/sord1d/rainbowtext");
             return true;
 
         }
