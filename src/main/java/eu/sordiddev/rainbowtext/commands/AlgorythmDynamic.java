@@ -42,7 +42,7 @@ public class AlgorythmDynamic implements CommandExecutor {
         int textlength = inputtext.length();
 
 
-       //Defining start values for the colors depending on the command TODO
+       // TODO Define start values for the colors depending on the command
 
         float hue1 = Color.RGBtoHSB(10
                 , 1, 10, null)[0];
@@ -65,7 +65,29 @@ public class AlgorythmDynamic implements CommandExecutor {
 
         }
 
-        sender.sendMessage(String.valueOf(colors));
+        sender.sendMessage(String.valueOf(colors)); //TODO REMOVE
+
+        if ( textlength != 0 ) {
+            int currentposition = 0;
+            char currentletter;
+            while (textlength > currentposition) {
+                String hex = colors.get(currentposition);
+                currentletter = inputtext.charAt(currentposition);
+                if (Character.isSpaceChar(currentletter)){
+                    outputtext = new String (outputtext + " ");
+                }else{
+                    outputtext = new String(outputtext + "&" + hex + currentletter);
+                }
+                currentposition = currentposition +1;
+
+
+            }
+
+        }
+
+        ((Player) sender).chat(outputtext);
+        colors = new ArrayList<>();
+
 
         return false;
     }
