@@ -68,6 +68,7 @@ public class AlgorythmDynamic implements CommandExecutor {
             //calculating a gradient due to the power of maths - yay maths (I googled the maths formula)
            loopcolor =  Color.getHSBColor(hue1 + (i * (hue2 - hue1) / n), 1, 1);
 
+
            //getting rgb values and converting it to hex, adding the color to the color list
             int red = loopcolor.getRed();
             int green = loopcolor.getGreen();
