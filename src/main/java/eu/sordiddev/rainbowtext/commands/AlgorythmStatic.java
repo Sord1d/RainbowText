@@ -24,6 +24,14 @@ public class AlgorythmStatic implements CommandExecutor {
     @Override
     public boolean onCommand ( CommandSender sender,  Command command,  String label,  String[] text) {
 
+        //Check whether command sender has permissions to use the command, cancel event when permissions are not set
+        if(!sender.hasPermission("rainbowtext.use")){
+            sender.sendMessage(String.valueOf(
+                    ChatColor.RED) + ChatColor.BOLD + "Rainbow" + ChatColor.GOLD + ChatColor.BOLD + "Text: " + ChatColor.YELLOW + "You are not allowed to execute this command. "+
+                    ChatColor.DARK_GRAY + "[You are lacking the permission node rainboxtext.use]");
+           return true;
+        }
+
         if ( text.length == 0 ) {
             sender.sendMessage(ChatColor.GREEN + "");
             sender.sendMessage(ChatColor.GREEN + "RainbowText V 1.0");

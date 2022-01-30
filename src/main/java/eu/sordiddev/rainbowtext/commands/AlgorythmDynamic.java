@@ -24,6 +24,14 @@ public class AlgorythmDynamic implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] text) {
 
+        //Check whether command sender has permissions to use the command, cancel event when permissions are not set
+        if(!sender.hasPermission("rainbowtext.use")){
+            sender.sendMessage(String.valueOf(
+                    ChatColor.RED) + ChatColor.BOLD + "Rainbow" + ChatColor.GOLD + ChatColor.BOLD + "Text: " + ChatColor.YELLOW + "You are not allowed to execute this command. "+
+                    ChatColor.DARK_GRAY + "[You are lacking the permission node rainboxtext.use]");
+            return true;
+        }
+
         //getting the text length and the input text
         String inputtext = String.join(" ",text);
         String outputtext = "";
@@ -38,7 +46,6 @@ public class AlgorythmDynamic implements CommandExecutor {
      */
 
         //Define start values for the colors depending on the command -
-        // TODO something's still wring with this color gradient stuff. It works for some colors, doesn't work for others - also the displayed colors are not the ones defined below fml i guess
         float hue1 = Color.RGBtoHSB(10, 1, 10, null)[0];
         float hue2 = Color.RGBtoHSB(100, 100, 110, null)[0];
 
