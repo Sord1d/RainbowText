@@ -33,16 +33,16 @@ public class AlgorythmStatic implements CommandExecutor {
         }
 
         if ( text.length == 0 ) {
-            sender.sendMessage(ChatColor.GREEN + "");
-            sender.sendMessage(ChatColor.GREEN + "RainbowText V 1.0");
-            sender.sendMessage(ChatColor.GREEN + "");
-            sender.sendMessage(ChatColor.GREEN + "/rtrs <text> - adds a static gradient to your text starting with red");
-            sender.sendMessage(ChatColor.GREEN + "/rtgs <text> - adds a static gradient to your text starting with green");
-            sender.sendMessage(ChatColor.GREEN + "/rtbs <text> - adds a static gradient to your text starting with blue");
-            sender.sendMessage(ChatColor.GREEN + "/rtys <text> - adds a static gradient to your text starting with yellow");
-            sender.sendMessage(ChatColor.GREEN + "For adding a dynamic gradient use /rt, /rtr, /rtg, /rtb or /rty");
-            sender.sendMessage(ChatColor.GREEN + "");
-            sender.sendMessage(ChatColor.GREEN + "github.com/sord1d/rainbowtext");
+            sender.sendMessage(
+                    " ",ChatColor.YELLOW + "----------------------------------------------------",
+                    ChatColor.DARK_RED + "                        "+ ChatColor.RED +  "sord1d/" + ChatColor.GOLD + ChatColor.BOLD + "Rainbow Text",
+                    ChatColor.YELLOW + "----------------------------------------------------",
+                    ChatColor.RED + "/rtrs <text>" + ChatColor.GOLD+ "     start the gradient with red",
+                    ChatColor.RED + "/rtgs <text>" + ChatColor.GOLD+ "     start the gradient with green",
+                    ChatColor.RED + "/rtbs <text>" + ChatColor.GOLD+ "     start the gradient with blue",
+                    ChatColor.RED + "/rtys <text>" + ChatColor.GOLD+ "     start the gradient with yellow",
+                    ChatColor.YELLOW + "----------------------------------------------------",
+                    ChatColor.GOLD + "For adding a dynamic gradient use /rt, /rtr, /rtg, /rtb or /rty");
             return true;
 
         }
