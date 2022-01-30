@@ -109,9 +109,9 @@ public class AlgorythmDynamic implements CommandExecutor {
                     ChatColor.YELLOW + "----------------------------------------------------",
                     ChatColor.RED + "/rt  <text>" + ChatColor.GOLD+ "      add a rainbow gradient to your text",
                     ChatColor.RED + "/rtr <text>" + ChatColor.GOLD+ "     add a red gradient to your text",
-                    ChatColor.RED + "/rtg <text>" + ChatColor.GOLD+ "     add a green gradient tu your text",
+                    ChatColor.RED + "/rtg <text>" + ChatColor.GOLD+ "     add a green gradient to your text",
                     ChatColor.RED + "/rtb <text>" + ChatColor.GOLD+ "     add a blue gradient to your text",
-                    ChatColor.RED + "/rtg <text>" + ChatColor.GOLD+ "     add a green gradient tu your text",
+                    ChatColor.RED + "/rtg <text>" + ChatColor.GOLD+ "     add a green gradient to your text",
                     ChatColor.YELLOW + "----------------------------------------------------",
                     ChatColor.GOLD + "For adding a static gradient use /rtrs, /rtgs, /rtbs or /rtys");
             return true;
