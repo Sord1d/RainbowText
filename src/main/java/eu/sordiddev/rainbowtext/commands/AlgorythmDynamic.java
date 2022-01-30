@@ -103,17 +103,17 @@ public class AlgorythmDynamic implements CommandExecutor {
 
         }
         if ( text.length == 0 ) {
-            sender.sendMessage(ChatColor.GREEN + "");
-            sender.sendMessage(ChatColor.GREEN + "RainbowText V 1.0");
-            sender.sendMessage(ChatColor.GREEN + "");
-            sender.sendMessage(ChatColor.GREEN + "/rt <text> - add a rainbow gradient to your text");
-            sender.sendMessage(ChatColor.GREEN + "/rtr <text> - add a red gradient to your text");
-            sender.sendMessage(ChatColor.GREEN + "/rtg <text> - add a green gradient tu your text");
-            sender.sendMessage(ChatColor.GREEN + "/rtb <text> - add a blue gradient to your text");
-            sender.sendMessage(ChatColor.GREEN + "/rty <text> - add a yellow gradient to your text");
-            sender.sendMessage(ChatColor.GREEN + "For adding a static gradient use  /rtrs, /rtgs, /rtbs or /rtys");
-            sender.sendMessage(ChatColor.GREEN + "");
-            sender.sendMessage(ChatColor.GREEN + "github.com/sord1d/rainbowtext");
+            sender.sendMessage(
+                    " ",ChatColor.YELLOW + "----------------------------------------------------",
+                    ChatColor.DARK_RED + "                        "+ ChatColor.RED +  "sord1d/" + ChatColor.GOLD + ChatColor.BOLD + "Rainbow Text",
+                    ChatColor.YELLOW + "----------------------------------------------------",
+                    ChatColor.RED + "/rt  <text>" + ChatColor.GOLD+ "      add a rainbow gradient to your text",
+                    ChatColor.RED + "/rtr <text>" + ChatColor.GOLD+ "     add a red gradient to your text",
+                    ChatColor.RED + "/rtg <text>" + ChatColor.GOLD+ "     add a green gradient tu your text",
+                    ChatColor.RED + "/rtb <text>" + ChatColor.GOLD+ "     add a blue gradient to your text",
+                    ChatColor.RED + "/rtg <text>" + ChatColor.GOLD+ "     add a green gradient tu your text",
+                    ChatColor.YELLOW + "----------------------------------------------------",
+                    ChatColor.GOLD + "For adding a static gradient use /rtrs, /rtgs, /rtbs or /rtys");
             return true;
 
         }
