@@ -7,13 +7,23 @@ description: Adds a gradient to your text
 website: github.com/sord1d
 permissions:
   rainbowtext.use:
+    description: permission to use the plugin
 commands:
   rtrs:
+    description: static gradient red
   rtgs:
+    description: static gradient green
   rtys:
+    description: static gradient yellow
   rtbs:
+    description: static gradient blue
   rtr:
+    description: dynamic gradient red
   rtg:
+    description: dynamic gradient green
   rtb:
+    description: dynamic gradient blue
   rty:
+    description: dynamic gradient yellow
   rt:
+    description: dynamic gradient rainbow
